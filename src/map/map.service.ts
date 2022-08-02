@@ -22,7 +22,7 @@ export class MapService {
   async radius(params: IRadiusParams) {
     try {
       const { data } = await axios.get(
-        `${process.env.API_GEO}/ru/places/radius/`,
+        `${process.env.API_GEO}/ru/places/radius`,
         { params: { ...params, apikey: process.env.API_GEO_KEY } },
       );
 
